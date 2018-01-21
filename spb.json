@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "name": "Санкт-Петербург",
+    "version": "2018.01.15",
+    "license": "https://gitlab.com/iamale/semantic-metro/blob/master/LICENSE",
+    "author": "Alexander Pushkov <alexander@notpushk.in>"
+  },
+  "lines": {
+    "1": {
+      "alias": "Кировско-Выборгская линия",
+      "stationIds": [
+        "red_devyatkino",
+        "red_grazhdanka",
+        "red_akademka",
+        "red_politeh",
+        "red_mujestva",
+        "red_lesnaya",
+        "red_viborgskaya",
+        "red_ploschad_lenina",
+        "red_chernishevskaya",
+        "xfer_vosstaniya",
+        "xfer_vladimirskaya",
+        "xfer_pushkinskaya",
+        "xfer_tehnolozhka",
+        "red_balt",
+        "red_narva",
+        "red_kirovsky",
+        "red_avtovo",
+        "red_leninsky",
+        "red_veteranov"
+      ],
+      "stations": [
+        "Девяткино",
+        "Гражданский проспект",
+        "Академическая",
+        "Политехническая",
+        "Площадь Мужества",
+        "Лесная",
+        "Выборгская",
+        "Площадь Ленина",
+        "Чернышевская",
+        "Площадь Восстания",
+        "Владимирская",
+        "Пушкинская",
+        "Технологический институт-I",
+        "Балтийская",
+        "Нарвская",
+        "Кировский завод",
+        "Автово",
+        "Ленинский проспект",
+        "Проспект Ветеранов"
+      ],
+      "driving": [ 190, 220, 130, 110, 190, 160, 160, 160, 150, 110, 120, 130, 130, 170, 220, 170, 160, 150 ],
+      "delayDay": 3,
+      "delayNight": 6
+    },
+    "2": {
+      "alias": "Московско-Петроградская линия",
+      "stationIds": [
+        "blue_parnas",
+        "blue_prosvet",
+        "blue_ozerki",
+        "blue_udelka",
+        "blue_pionerka",
+        "blue_rechka",
+        "blue_petra",
+        "blue_gorkovskaya",
+        "xfer_nevsky",
+        "xfer_sennaya",
+        "xfer_tehnolozhka",
+        "blue_frunza",
+        "blue_mos_vorota",
+        "blue_elektrosila",
+        "blue_pp",
+        "blue_moskovskaya",
+        "blue_zvyozdnaya",
+        "blue_kupchino"
+      ],
+      "stations": [
+        "Парнас",
+        "Проспект Просвещения",
+        "Озерки",
+        "Удельная",
+        "Пионерская",
+        "Чёрная речка",
+        "Петроградская",
+        "Горьковская",
+        "Невский проспект",
+        "Сенная площадь",
+        "Технологический институт-II",
+        "Фрунзенская",
+        "Московские ворота",
+        "Электросила",
+        "Парк Победы",
+        "Московская",
+        "Звёздная",
+        "Купчино"
+      ],
+      "driving": [ 220, 170, 165, 160, 165, 205, 140, 220, 120, 150, 135, 135, 130, 130, 170, 230, 150 ],
+      "delayDay": 3,
+      "delayNight": 5
+    },
+    "3": {
+      "alias": "Невско-Василеостровская линия",
+      "stationIds": [
+        "gren_primorskaya",
+        "gren_vasileostrovskaya",
+        "xfer_nevsky",
+        "xfer_vosstaniya",
+        "xfer_plan",
+        "gren_elizarovka",
+        "gren_lomonosovskaya",
+        "gren_proletarka",
+        "gren_obukhovo",
+        "gren_ribatskoye"
+      ],
+      "stations": [
+        "Приморская",
+        "Василеостровская",
+        "Гостиный двор",
+        "Маяковская",
+        "Площадь Александра Невского-I",
+        "Елизаровская",
+        "Ломоносовская",
+        "Пролетарская",
+        "Обухово",
+        "Рыбацкое"
+      ],
+      "driving": [165, 235, 170, 190, 240, 200, 180, 160, 290],
+      "delayDay": 3,
+      "delayNight": 4
+    },
+    "4": {
+      "alias": "Правобережная линия",
+      "stationIds": [
+        "xfer_sennaya",
+        "xfer_vladimirskaya",
+        "oran_ligovka",
+        "xfer_plan",
+        "oran_cherka",
+        "oran_ladoga",
+        "oran_bolshevikov",
+        "oran_dybenko"
+      ],
+      "stations": [
+        "Спасская",
+        "Достоевская",
+        "Лиговский проспект",
+        "Площадь Александра Невского-II",
+        "Новочеркасская",
+        "Ладожская",
+        "Проспект Большевиков",
+        "Улица Дыбенко"
+      ],
+      "driving": [150, 115, 140, 180, 155, 155, 150],
+      "delayDay": 3,
+      "delayNight": 4
+    },
+    "5": {
+      "alias": "Фрунзенско-Приморская линия",
+      "stationIds": [
+        "purp_komenda",
+        "purp_starder",
+        "purp_kresty",
+        "purp_chkalovskaya",
+        "purp_sport",
+        "purl_admiral",
+        "xfer_sennaya",
+        "xfer_pushkinskaya",
+        "purp_obvodny",
+        "purp_volk",
+        "purp_bukharest",
+        "purp_mezhnar"
+      ],
+      "stations": [
+        "Комендантский проспект",
+        "Старая Деревня",
+        "Крестовский остров",
+        "Чкаловская",
+        "Спортивная",
+        "Адмиралтейская",
+        "Садовая",
+        "Звенигородская",
+        "Обводный канал",
+        "Волковская",
+        "Бухарестская",
+        "Международная"
+      ],
+      "driving": [200, 190, 190, 125, 180, 180, 130, 180, 180, 110, 145],
+      "delayDay": 3,
+      "delayNight": 4
+    }
+  },
+  "transfers": {
+    "xfer_tehnolozhka": { "lines": [1, 2], "time": 60 },
+    "xfer_nevsky": { "lines": [2, 3], "time": 120 },
+    "xfer_sennaya": { "lines": [2, 4, 5], "time": [275, 180, 180] },
+    "xfer_plan": { "lines": [3, 4], "time": 120 },
+    "xfer_vladimirskaya": { "lines": [4, 1], "time": 120 },
+    "xfer_vosstaniya": { "lines": [1, 3], "time": 120 },
+    "xfer_pushkinskaya": { "lines": [1, 5], "time": 140 }
+  }
+}

@@ -1,0 +1,44 @@
+# Адаптация спеки файлов *.trp из pMetro для формата JSON.
+
+meta:
+  name: "Санкт-Петербург"
+  version: "2018.01.15"
+  license: "ISC"  # SPDX или ссылка на лицензию
+  author: "Barney Rubble <b@rubble.com> (http://barnyrubble.tumblr.com/)"
+
+lines:
+  1:
+    # ключ — поле Name из *.trx
+    # значения — все остальные поля
+    alias: Кировско-Выборгская линия
+    stationIds:
+      # id объектов станций в SVG
+      - red_devyatkino
+      - red_grazhdanka
+      # ...
+      - red_leninsky
+      - red_veteranov
+    stations: 
+      - Девяткино
+      - Гражданский проспект
+      # ...
+      - Ленинский проспект
+      - Проспект Ветеранов
+    driving: [190, 220, ..., 160, 150]  # в секундах
+    delayDay: 3
+    delayNight: 6
+  # ...
+
+transfers:
+  # ключ — id станции пересадки, значение — время или объект { time12, time21 }
+  xfer_tehnolozhka:
+    lines: [1, 2]
+    time: 60  # в секундах
+  # если станций больше двух, time указывается для всех пар линий
+  xfer_sennaya:
+    lines: [2, 4, 5]
+    time: 
+      - 275  # 2 → 4 с Сенной на Спасскую
+      - 180  # 4 → 5 со Спасской на Садовую
+      - 180  # 5 → 2 с Садовой на Сенную
+  # ...
